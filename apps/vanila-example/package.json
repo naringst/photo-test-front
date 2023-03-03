@@ -1,0 +1,10 @@
+{
+  "name": "vanila-example",
+  "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "start:dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
