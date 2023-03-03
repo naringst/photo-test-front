@@ -5,6 +5,7 @@
     - 레포지토리의 prettier 설정을 무시함
 - eslint 플러그인은 깔려있어야함
 - vs code 세팅에서 default formatter를 ESLint로 format on save를 체크로
+- eslint > Format: Enable을 체크
 
 ## 프론트 세팅법
 - 워크스페이스는 `/apps` 폴더 내부에 만들어야함
