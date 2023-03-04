@@ -1,7 +1,3 @@
-alert(1);
-
-function a() {
-  console.log(1);
-}
-
-a();
+const result = await fetch('/api/photos');
+const body = await result.json();
+console.log(body);

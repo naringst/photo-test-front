@@ -2,9 +2,9 @@
   "name": "vanila-example",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "start:dev": "live-server"
+    "start": "parcel index.html"
   },
-  "devDependencies": {
-    "live-server": "^1.2.2"
+  "dependencies": {
+    "parcel": "^2.8.3"
   }
 }

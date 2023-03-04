@@ -16,10 +16,11 @@
 - 폴더 생성
 - `/apps/vanila-example` 참조하여 `/src` 폴더와 `index.html` 구성
     - `index.html`은 수정해서는 안됩니다.
+- api 경로의 경우 프록시 설정 때문에 `/api/~`로 하면 됩니다. example 참조
 ```bash
 $ yarn init
 $ yarn install
-$ yarn add -D live-server
+$ yarn add -D parcel
 ```
 - `/apps/vanila-example/package.json` 참조하여 스크립트 작성
 ### React

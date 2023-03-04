@@ -1,0 +1,9 @@
+{
+    "/api": {
+        "target": "http://52.78.105.104:3000/",
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/api": ""
+        }
+    }
+}
