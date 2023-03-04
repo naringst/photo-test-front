@@ -9,11 +9,13 @@
 ### yarn
 - 패키지 관리 도구로 `yarn berry`를 사용합니다.
 - npm 쓰지 마세요!!
-## 프론트 세팅법
-- 워크스페이스는 `/apps` 폴더 내부에 만들어야함
+- mono repo로 만들어져 구조가 조금 다릅니다 ^^
+## 워크스페이스 세팅법
+- 워크스페이스는 `/apps` 폴더 내부에 만들어야합니다.
 ### Vanila JS
 - 폴더 생성
 - `/apps/vanila-example` 참조하여 `/src` 폴더와 `index.html` 구성
+    - `index.html`은 수정해서는 안됩니다.
 ```bash
 $ yarn init
 $ yarn install
