@@ -3753,14 +3753,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gyujin@workspace:apps/gyujin":
-  version: 0.0.0-use.local
-  resolution: "gyujin@workspace:apps/gyujin"
-  dependencies:
-    parcel: ^2.8.3
-  languageName: unknown
-  linkType: soft
-
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -5193,6 +5185,14 @@ __metadata:
   checksum: 54d4166d6ef08db41252eb4e96d4109ebcb8029f0374f9db873bd91a1f896c32ec780d2a2ea65c0b2d7caf1f28d5e1ea33746a470f32146ac8bba821d80d38d8
   languageName: node
   linkType: hard
+
+"nari-vanila@workspace:apps/nari-vanila":
+  version: 0.0.0-use.local
+  resolution: "nari-vanila@workspace:apps/nari-vanila"
+  dependencies:
+    parcel: ^2.8.3
+  languageName: unknown
+  linkType: soft
 
 "natural-compare-lite@npm:^1.4.0":
   version: 1.4.0
