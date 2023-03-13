@@ -1,6 +1,9 @@
 {
   "name": "nari-vanila",
   "packageManager": "yarn@3.4.1",
+  "scripts":{
+    "start" : "parcel index.html"
+  },
   "devDependencies": {
     "parcel": "^2.8.3"
   }
