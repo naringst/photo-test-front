@@ -1,4 +1,3 @@
-// const filterLists = ['cat','dog'];
 
 // function getFilterValue() {
 //     const filterNode = document.getElementsByName('filter')
@@ -8,11 +7,11 @@
 //         return node.value     
 //     }})
 // }
-   
-async function fetchPhotos(value) {
-    //여기 어떻께 해야 잘하쥐 ...
 
-    const url = '/api/photos'
+async function fetchPhotos(value) {
+    const url = '/api/photos' 
+
+    //필터링 ..
     if (value == 'cat') {
         requrl = '/api/photos?filter=cat'
     
@@ -31,13 +30,10 @@ async function fetchPhotos(value) {
     var refresher = document.querySelectorAll('li');
     refresher.forEach(function() {
         addEventListener('click' , refreshPhotos)
-    
-    })
-       
-    
+    })    
 } 
 
-
+//사진 렌더링 함수
 function showPhotos(url){
     const photoDiv = document.getElementById('photos');
     newImage = document.createElement('img');
@@ -46,6 +42,7 @@ function showPhotos(url){
 
 }
 
+//선택값 변할 때 이전 사진 지우는 함수
 function refreshPhotos(){
     const photoDiv = document.getElementById('photos');
     photoDiv.innerHTML = ""
