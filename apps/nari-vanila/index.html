@@ -10,7 +10,7 @@
 <body>
     <div id="container">
         <header>
-            <ul>
+            <ul id=" choices">
                 <li><a href="/apps/nari-vanila/index.html">강아양이</a></li>
                 <li ><a href="/apps/nari-vanila/index.html">사진</a></li>            
                 <li><a  href="/apps/nari-vanila/secret.html">비밀</a></li>
@@ -22,13 +22,13 @@
         
         <div id="photoField"> 
             <!-- 사진들 렌더링 -->
-            <button onclick= "fetchPhotos()">사진보기</button>
+            <!-- <button onclick= "fetchPhotos()">사진보기</button> -->
 
-            <label><input type="radio" name="filter" value="all" checked onclick="getFilterValue()">전체보기</label>
-            <label><input type="radio" name="filter" value="cat" onclick="getFilterValue()"> 고양이</label>
-            <label><input type="radio" name="filter" value="dog" onclick="getFilterValue()"> 강아지</label>
+            <label><input type="radio" name="filter" value="all" checked onclick="fetchPhotos(this.value)">전체보기</label>
+            <label><input type="radio" name="filter" value="cat" onclick="fetchPhotos(this.value)"> 고양이</label>
+            <label><input type="radio" name="filter" value="dog" onclick="fetchPhotos(this.value)"> 강아지</label>
         </div>
-
+<div id="photos"></div>
     </div>
 
     <script src="src/index.js" ></script>
