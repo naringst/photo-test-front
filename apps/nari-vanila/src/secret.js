@@ -1,5 +1,12 @@
-async function renderSecretPhoto() {
-  const secretUrl = '/api/photos/secret';
+async function renderSecretPhoto(value) {
+  let secretUrl = '/api/photos/secret';
+  // 필터링 ..
+  if (value === 'cat') {
+    secretUrl = '/api/photos?filter=cat';
+  } else if (value === 'dog') {
+    secretUrl = '/api/photos?filter=dog';
+  }
+
   const AccessToken = localStorage.getItem('AccessToken');
 
   function showPhotos(photourl) {
@@ -15,6 +22,16 @@ async function renderSecretPhoto() {
     },
   });
   const body = await result.json();
-  console.log(body);
   body.map((each) => showPhotos(each.src.tiny));
+
+  function refreshPhotos() {
+    const photoDiv = document.getElementById('photos');
+    photoDiv.innerHTML = '';
+  }
+
+  // 선택값 변경시 리프레쉬 되도록
+  const refresher = document.querySelectorAll('li');
+  refresher.forEach(() => {
+    addEventListener('click', refreshPhotos);
+  });
 }
