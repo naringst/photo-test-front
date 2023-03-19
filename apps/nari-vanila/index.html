@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진테스트</title>
+   <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <ul id="choices">
+                <li><a href="/apps/nari-vanila/index.html">강아양이</a></li>
+                <li ><a href="/apps/nari-vanila/index.html">사진</a></li>            
+                <li><a  href="/apps/nari-vanila/secret.html">비밀</a></li>
+            </ul>
+            <div>
+                <a id = "login" href="/apps/nari-vanila/login.html">로그인</a>
+            </div>
+        </header>
+        
+        <div id="photoField"> 
+            <!-- 사진들 렌더링 -->  
+
+            <label><input type="radio" name="filter" value="all"  onclick="fetchPhotos(this.value)">전체보기</label>
+            <label><input type="radio" name="filter" value="cat" onclick="fetchPhotos(this.value)"> 고양이</label>
+            <label><input type="radio" name="filter" value="dog" onclick="fetchPhotos(this.value)"> 강아지</label>
+        </div>
+    <div id="photos"></div>
+    </div>
+
+    <script src="src/index.js" ></script>
+</div>
+
+</body>
+</html>

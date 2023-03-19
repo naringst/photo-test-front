@@ -1,0 +1,38 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin : 0 auto;
+    width : 1200px;
+}
+
+header {
+    height :50px;
+}
+
+li { 
+    list-style-type : none;
+    margin : 10px;
+    
+}
+
+ul {
+    display : flex;
+    float : left;
+
+}
+
+#login {
+    margin-top : 10px;
+    float : right ;
+}
+
+#photoField  {
+    margin-left : 10px;
+ 
+
+
+}
